@@ -1,0 +1,147 @@
+:root {
+    --bg: #1b1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    padding: 0px 80px;
+}
+
+nav {
+    background-color: beige;
+    border-radius: 25px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.hero-section{
+    background-color: rgb(0, 0, 0);
+    padding: 100px;
+    border-radius: 25px;
+}
+
+
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 46px;
+    text-align: center;
+    color: chocolate;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    color: cadetblue;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.link-container {
+    display: flex;
+    gap: 25px;
+}
+
+.header {
+    color: aqua;
+    font-family: monospace;
+    padding: 20px 20px;
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: rgb(255, 109, 46);
+    align-content: center;
+    padding: 20px 40px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 25px;
+    font-family: monospace;
+    position: relative;
+}
+
+/*-----------Animations---------------*/
+
+.main-hero {
+    animation: fadeIn 1.7s linear forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }    
+}
+
+.plus:hover {
+    animation: plus 0.3s linear forwards;
+}
+
+@keyframes plus {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+        background-color: rgb(66, 255, 107);
+    }
+}
+
+.side:hover {
+    animation: side 0.5s linear forwards;
+    transform-origin: bottom left;
+}
+
+@keyframes side {
+    from {
+        transform: skewX(0deg); 
+    }
+    to {
+        transform: skewX(-10deg);
+        background-color: rgb(35, 130, 255);
+    }
+}
+
+.neon {
+    background-color: var(--bg);
+    color: white;
+}
+.neon:hover {
+    background-color: rgb(154, 205, 50);
+    color: white;
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgb(154, 205, 50);
+}
